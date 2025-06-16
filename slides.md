@@ -156,7 +156,7 @@ node('android-os-build') {
 ---
 transition: slide-left
 ---
-  
+
 ::title::
 
 # What was done (2)?
@@ -203,7 +203,7 @@ parameters {
 ---
 transition: slide-left
 ---
-  
+
 ::title::
 
 # What was done (3)?
@@ -374,7 +374,7 @@ The follow article explore the key benefits of Jenkins DSL:
 - Define your Jenkins jobs in a Groovy-based language, which can be stored in a version control system like Git.
 - Job DSL scripts can be executed to automatically create, update, or delete jobs based on the defined DSL code.
 - Ensure consistency across different Jenkins environments and prevent human errors associated with manual configuration.
-- Track changes to your job configurations over time, similar to how you track changes to your application code. 
+- Track changes to your job configurations over time, similar to how you track changes to your application code.
 
 <a href="https://wiki.amarulasolutions.com/articles/jenkins/jenkins-dsl-gerrit-trigger.html">A complete example</a>
 
