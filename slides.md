@@ -52,6 +52,7 @@ transition: slide-left
 Jenkins supports three main types of pipeline definitions: declarative, scripted, YAML. The first two rely on Groovy syntax.
 
 <table>
+<tbody>
 <tr>
 <th> YAML pipeline </th>
 <th> Declarative pipeline </th>
@@ -83,6 +84,7 @@ pipeline {
 ```
 </td>
 </tr>
+</tbody>
 </table>
 
 <!--
