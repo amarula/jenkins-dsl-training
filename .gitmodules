@@ -1,0 +1,3 @@
+[submodule "slidev-theme-amarula"]
+	path = slidev-theme-amarula
+	url = https://github.com/amarula/slidev-theme-amarula.git
