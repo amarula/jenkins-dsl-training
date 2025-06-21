@@ -110,6 +110,37 @@ transition: slide-left
     3. The changes are not reviewed and accepted
 - ... or you can with **Jenkins Configuration Job Plugin**
 
+---
+transition: slide-left
+---
+
+::title::
+
+# Properties pipeline can be defined by GUI
+
+::body::
+
+**Too many elements** can be configured by the GUI. Let's see some example...
+
+<img src="/assets/pipeline-gui.png"  style="width: 60%; vertical-align: top;" />
+
+---
+transition: slide-left
+---
+
+::title::
+
+# The Core Benefits
+
+::body::
+
+**Why DSLs for Pipeline Improvement?**
+
+The primary motivation for using DSLs in pipelines is to achieve higher levels of abstraction, readability, and consistency.
+
+- By abstracting away underlying technical details, DSLs make pipelines more accessible to a broader audience (developers, operations).
+
+- This leads to clearer intent, reduced cognitive load, and fewer errors in pipeline definitions.
 
 ---
 transition: slide-left
@@ -222,6 +253,42 @@ transition: slide-left
 
 ::title::
 
+# What was done (4)?
+
+::body::
+
+Standardize the way to setup any project:
+
+- software design should include unit test
+- result of unit test should be collected by the CI for quality gates
+- code coverage needs to be collected as result of unit test execution
+- valgrid can be connected to unit test to collect problem of memory allocation
+- linting, static analisys should be always part of our design (codechecker, sonarqube, android lint, etc...)
+
+---
+transition: slide-left
+---
+
+::title::
+
+# Be able to test our pipeline
+
+::body::
+
+Long process already started:
+
+- Groovy libraries that are used to create pipeline are now in CI.
+- We need to cover more of what we have done in term of code coverage.
+- We need to be able to have a more clear roadmap.
+- Optimize the library to reduce time to build.
+
+
+---
+transition: slide-left
+---
+
+::title::
+
 # From GUI to code
 
 ::body::
@@ -324,7 +391,7 @@ Pipeline as Code (PaC) is incredibly useful because it allows for the definition
 <div>
 <ul>
 <li>
-Iproved collaboration among development teams.
+Improved collaboration among development teams.
 </li>
 <li>
 Eliminating manual errors and "it works on my machine".
@@ -436,96 +503,41 @@ Good news:
 
 
 ---
-foo: bar
-dragPos:
-  square: -158,0,0,0
+class: slide-left
 ---
 
 ::title::
 
-Draggable Elements
+# DSL: Improved Collaboration
 
 ::body::
 
-Double-click on the draggable elements to edit their positions.
+**Bridging the Dev-Ops Divide**
 
-<br>
+By making pipelines more accessible and readable, DSLs foster better collaboration between development, operations, and security teams.
 
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="614,234,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
+- Developers can more easily understand deployment processes.
+- Operations can define infrastructure as code using familiar pipeline constructs.
+- Security can embed policies directly into the pipeline definition, leading to a truly unified DevSecOps approach.
 
 ---
-src: ./pages/imported-slides.md
-hide: false
----
-
+class: slide-left
 ---
 
 ::title::
 
-Monaco Editor
+# Time for feedback
 
 ::body::
 
-Slidev provides built-in Monaco Editor support.
+<div grid="~ cols-2 gap-4">
+<div>
+<h1>Please ask any question!!!</h1>
+<h2>... I will reply!!!</h2>
+<h3>... love to</h3>
+</div>
+<div>
+<img src="/assets/question.jpeg"  style="width: 80%; vertical-align: top;" />
+</div>
+</div>
 
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
-
----
-layout: center
-class: text-center
----
-
-Learn More
-
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
-
-<PoweredBySlidev mt-10 />
